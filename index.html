@@ -11,21 +11,27 @@
         <h1 class="h1">Welcome to Hangman</h1>
         <div class="box">
             
-            <div class="screen">
+            <div class="screen" id="hangmanGraphics">
 
             </div>
             <div class="ib">
-                <div class="input">
+                <div class="input" id="wordToGuess">
                     
                 </div>
                 <div class="keyboard">
-                    <button>A</button> <button>B</button> <button>C</button> <button>D</button> <button>E</button> <button>F</button> <button>G</button> 
-                    <button>H</button> <button>I</button> <button>J</button> <button>K</button> <button>L</button> <button>M</button> <button>N</button> 
-                    <button>O</button> <button>P</button> <button>Q</button> <button>R</button> <button>S</button> <button>T</button> <button>U</button> 
-                    <button>V</button> <button>W</button> <button>X</button> <button>Y</button> <button>Z</button>
+                    <button onclick="Guessed('a')">A</button> <button onclick="Guessed('b')">B</button> <button onclick="Guessed('c')">C</button> 
+                    <button onclick="Guessed('d')">D</button> <button onclick="Guessed('e')">E</button> <button onclick="Guessed('f')">F</button> 
+                    <button onclick="Guessed('g')">G</button> <button onclick="Guessed('h')">H</button> <button onclick="Guessed('i')">I</button> 
+                    <button onclick="Guessed('j')">J</button> <button onclick="Guessed('k')">K</button> <button onclick="Guessed('l')">L</button> 
+                    <button onclick="Guessed('m')">M</button> <button onclick="Guessed('n')">N</button> <button onclick="Guessed('o')">O</button> 
+                    <button onclick="Guessed('p')">P</button> <button onclick="Guessed('q')">Q</button> <button onclick="Guessed('r')">R</button> 
+                    <button onclick="Guessed('s')">S</button> <button onclick="Guessed('t')">T</button> <button onclick="Guessed('u')">U</button> 
+                    <button onclick="Guessed('v')">V</button> <button onclick="Guessed('w')">W</button> <button onclick="Guessed('x')">X</button> 
+                    <button onclick="Guessed('y')">Y</button> <button onclick="Guessed('z')">Z</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
