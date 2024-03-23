@@ -3,11 +3,11 @@ import psycopg2
 import random
 
 connect = psycopg2.connect(
-    database="try",
-    user="postgres",
-    password="Q8P1DY8Q",
-    host="localhost",
-    port="5432"
+    database="",
+    user="",
+    password="",
+    host="",
+    port=""
 )
 
 cursor = connect.cursor()
