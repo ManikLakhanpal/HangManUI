@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="main.css">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
 </head>
 <body>
     <div class="container">
-        <h1 class="h1">Welcome to Hangman</h1>
+        <h2 class="h1">Hint: {{ hint }}</h2>
         <div class="box">
-            
             <div class="screen" id="hangmanGraphics">
 
             </div>
             <div class="ib">
                 <div class="input" id="wordToGuess">
-                    
+                    {% for i in range(len): %}
+                         <span> _ </span>
+                    {% endfor %}
                 </div>
                 <div class="keyboard">
                     <button onclick="Guessed('a')">A</button> <button onclick="Guessed('b')">B</button> <button onclick="Guessed('c')">C</button> 
@@ -32,6 +33,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='../static/script.js') }}"></script>
 </body>
 </html>

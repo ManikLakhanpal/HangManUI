@@ -48,7 +48,7 @@ def main():
     hint = data[number][2]
 
 
-    return render_template("main.html", title="Main", question=question, hint=hint, len=len(question))
+    return render_template("index.html", title="Main", question=question, hint=hint, len=len(question))
 
 @app.route('/game', methods=['POST', 'GET'])
 def game():
@@ -71,7 +71,7 @@ def game():
     if lives <= 0:
         return "You Lose"
     else:
-        return render_template("game.html", title="Game", hint=hint, lives=lives, answer=answer, question=word)
+        return render_template("game2.html", title="Game", hint=hint, lives=lives, answer=answer, question=word)
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000)
