@@ -50,7 +50,7 @@ def main():
 
     return render_template("main.html", title="Main", question=question, hint=hint, len=len(question))
 
-@app.route('/game', methods=['POST', 'GET'])
+@app.route('/game', methods=['POST'])
 def game():
     userChar = request.form.get("answer")
 
@@ -66,6 +66,9 @@ def game():
         for i in range(len(word)):
             if word[i] == userChar:
                 answer[i] = userChar
+    
+    if "_" not in answer:
+        return "You Win <a href='/main'>Start new game</a>"
 
     print(userChar, word, answer)
     if lives <= 0:
