@@ -3,18 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/yusha.css')}}">
     <title>{{ title }}</title>
 </head>
 <body>
-    <h1> TEMP </h1>
-    <p> 
-        {% for i in range(len): %}
-        <ul>
-            <li> ID : {{ data[i][0] }} </li>
-             <li> Word : {{ data[i][1] }} </li>
-             <li> Question : {{ data[i][2] }} </li>
-        </ul>
-        {% endfor %}
-    </p>
+    <div class="container">
+        <h1 class="h1">Welcome to Hangman</h1>
+        <div class="box">
+            
+            <div class="screen" id="hangmanGraphics">
+
+            </div>
+            <div class="ib">
+                <div class="input">
+                    <div class="overlay">
+                        <div class="textbox" id="wordToGuess">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <button onclick="Guessed('a')">A</button> <button onclick="Guessed('b')">B</button> <button onclick="Guessed('c')">C</button> 
+                    <button onclick="Guessed('d')">D</button> <button onclick="Guessed('e')">E</button> <button onclick="Guessed('f')">F</button> 
+                    <button onclick="Guessed('g')">G</button> <button onclick="Guessed('h')">H</button> <button onclick="Guessed('i')">I</button> 
+                    <button onclick="Guessed('j')">J</button> <button onclick="Guessed('k')">K</button> <button onclick="Guessed('l')">L</button> 
+                    <button onclick="Guessed('m')">M</button> <button onclick="Guessed('n')">N</button> <button onclick="Guessed('o')">O</button> 
+                    <button onclick="Guessed('p')">P</button> <button onclick="Guessed('q')">Q</button> <button onclick="Guessed('r')">R</button> 
+                    <button onclick="Guessed('s')">S</button> <button onclick="Guessed('t')">T</button> <button onclick="Guessed('u')">U</button> 
+                    <button onclick="Guessed('v')">V</button> <button onclick="Guessed('w')">W</button> <button onclick="Guessed('x')">X</button> 
+                    <button onclick="Guessed('y')">Y</button> <button onclick="Guessed('z')">Z</button>
+                    
+                </div>
+                <button class="start" id="start" onclick="window.location.href='/main'">
+                    <i data-lucide="box"></i>START
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
+    </script>
+
+<!-- JS file -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

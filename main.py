@@ -3,11 +3,11 @@ import psycopg2
 import random
 
 connect = psycopg2.connect(
-    database="",
-    user="",
-    password="",
-    host="",
-    port=""
+    database="zvkklrad",
+    user="zvkklrad",
+    password="JPyYJiOpDoO74LVugWuXdfoNqV85jHbG",
+    host="john.db.elephantsql.com",
+    port="5432"
 )
 
 cursor = connect.cursor()
@@ -30,7 +30,7 @@ def home():
     data = cursor.fetchall()
 
     print(len(data))
-    return render_template("home.html", data=data, title="Home", len=len(data))
+    return render_template("home.html", title="Home")
 
 @app.route('/main')
 def main():
@@ -48,10 +48,11 @@ def main():
     hint = data[number][2]
 
 
-    return render_template("main.html", title="Main", question=question, hint=hint, len=len(question))
+    return render_template("game.html", title="Main", hint=hint, lives=lives, len=len(question))
 
 @app.route('/game', methods=['POST'])
 def game():
+    print(request.form)
     userChar = request.form.get("answer")
 
     global lives, answer
@@ -74,7 +75,7 @@ def game():
     if lives <= 0:
         return "You Lose"
     else:
-        return render_template("game.html", title="Game", hint=hint, lives=lives, answer=answer, question=word)
+        return render_template("gameRun.html", title="Game", hint=hint, lives=lives, answer=answer)
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000)

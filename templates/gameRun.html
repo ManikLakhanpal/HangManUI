@@ -20,8 +20,8 @@
                 <div class="input">
                     <div class="overlay">
                         <div class="textbox" id="wordToGuess">
-                            {% for i in range(len): %}
-                                <span> _ </span>
+                            {% for i in answer %}
+                                <span> {{ i }}</span>
                             {% endfor %}
                         </div>
                     </div>
