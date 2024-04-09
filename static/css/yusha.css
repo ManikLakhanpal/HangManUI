@@ -115,3 +115,8 @@ body{
                 0 0 5px #ffff00,
                 0 0 25px #ffff00;
 }
+.hangmanimg{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
