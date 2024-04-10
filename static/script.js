@@ -1,0 +1,1 @@
+const startbtn = document.getElementById('start');
