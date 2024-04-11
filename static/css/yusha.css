@@ -87,7 +87,6 @@ body{
     color: #ffff00;
 }
 .start{
-    position: absolute;
     height: 50px;
     width: 140px;
     border: 2px solid black;
@@ -98,8 +97,6 @@ body{
     cursor: pointer;
     font-weight: bold;
     font-size: x-large;
-    top: 400px;
-    right: 400px;
     transition: .5s ease-in-out;
 }
 .start:hover{
