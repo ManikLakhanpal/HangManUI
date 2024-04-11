@@ -10,6 +10,8 @@ This is a Hangman game created using Python. It allows players to guess letters 
 
 ## Usage
 
+🎮 **Access the Game:** [Play Now](http://game.w16manik.ninja/home)
+
 1. Start the game server: `python main.py`
 2. Open your web browser and go to `http://localhost:3000`
 3. Follow the on-screen instructions to play the game.
