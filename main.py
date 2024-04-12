@@ -69,7 +69,7 @@ def game():
     if session['lives'] <= 0:
         return "You Lose"
 
-    return render_template("gameRun.html", title="Game", hint=session['hint'], lives=session['lives'], answer=session['answer'].upper())
+    return render_template("gameRun.html", title="Game", hint=session['hint'], lives=session['lives'], answer=session['answer'])
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000)
