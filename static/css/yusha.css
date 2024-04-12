@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#141e30,#243b55);
+    background: linear-gradient(#5C6F68,#243b55);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -13,11 +13,11 @@ body{
 
 }
 .h1{
-    color: #ff00ff;
+    color: chartreuse;
     font-size: xx-large;
     position: absolute;
     top: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .box{
     background-color: rgba(0, 0, 0, .5);

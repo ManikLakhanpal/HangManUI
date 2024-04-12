@@ -1,0 +1,56 @@
+/* tablet horiz */
+@media (max-width:800px) {
+    .box{
+        height: 56%;
+        width: 70%;
+    }
+    .screen{
+        height: 288px;
+        width: 40%;
+    }
+    .ib{
+        height: 350px;
+        width: 40%;
+    }
+    .input{
+        height: 50px;
+        width: 100%;
+    }
+    .keyboard{
+        height: 200px;
+        width: 100%;
+    }
+}
+/* tablet vert */
+@media (max-width:610px) {
+    .box{
+        height: 76%;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .screen{
+        width: 97%;
+        height: 300px;
+    }
+    .ib{
+        width: 97%;
+        height: 380px;
+    }
+}
+/* mobile */
+@media (max-width:340px) {
+    .screen{
+        height: 270px;
+    }
+    .keyboard{
+        height: 210px;
+    }
+    .keyboard button{
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+}
