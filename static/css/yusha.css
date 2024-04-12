@@ -112,8 +112,10 @@ body{
     width: 100%;
     border-radius: 10px;
 }
-.textbox{
-    font-size: 54px;
-    color: white;
+.textbox {
+    font-size: 45px;
+    display: flex;
+    justify-content: space-around;
+    color: red;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
