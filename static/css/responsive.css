@@ -40,6 +40,12 @@
         height: 380px;
     }
 }
+/* heading */
+@media (max-width:400px){
+    .h1{
+        font-size: x-large;
+    }
+}
 /* mobile */
 @media (max-width:340px) {
     .screen{
