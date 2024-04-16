@@ -45,7 +45,7 @@
         height: 380px;
     }
     .start{
-        position: relative;
+        position: static;
     }
 }
 /* heading */
