@@ -20,6 +20,11 @@
         height: 200px;
         width: 100%;
     }
+    .start{
+        position: absolute;
+        left: 68px;
+        bottom: 20px;
+    }
 }
 /* tablet vert */
 @media (max-width:610px) {
